@@ -31,9 +31,6 @@ public class ppa1{
             r.seth(h);
             int area = r.area();
             System.out.print(area);
-        } catch (NumberFormatException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        } 
     }
 }
