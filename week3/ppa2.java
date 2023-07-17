@@ -3,7 +3,11 @@ package week3;
 import java.util.*;
 class Point{
     private int x, y;
+   
  // implement the constructor and 
+    public static void Point(int x, int y){
+        
+    }
     // override the toString() and equals() methods
 }
 
