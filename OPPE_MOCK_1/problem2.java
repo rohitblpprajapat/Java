@@ -50,12 +50,13 @@ class Hod extends Faculty {
 }
 public class problem2{
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        Faculty obj1 = new Faculty(sc.next(), sc.nextDouble());
-        Faculty obj2 = new Hod(sc.next(), sc.nextDouble(), sc.next());
-        System.out.println(obj1.getDetails());
-        System.out.println(obj1.getDetails(10));
-        System.out.println(obj2.getDetails());
-        System.out.println(obj2.getDetails(10));
+        try (Scanner sc = new Scanner(System.in)) {
+            Faculty obj1 = new Faculty(sc.next(), sc.nextDouble());
+            Faculty obj2 = new Hod(sc.next(), sc.nextDouble(), sc.next());
+            System.out.println(obj1.getDetails());
+            System.out.println(obj1.getDetails(10));
+            System.out.println(obj2.getDetails());
+            System.out.println(obj2.getDetails(10));
+        }
     }
 }
