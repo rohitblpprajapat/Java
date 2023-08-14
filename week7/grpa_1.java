@@ -19,17 +19,18 @@ public class grpa_1 {
     }
 
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       int x = sc.nextInt();
-       int y = sc.nextInt();
-       
-       //call divide method here
+       try (Scanner sc = new Scanner(System.in)) {
+        int x = sc.nextInt();
+           int y = sc.nextInt();
+           
+           //call divide method here
 
-        try{
-            int c = divide(x, y);
-            System.out.println(c);
-        } catch (DivisionException e){
-            System.out.println(e);
-        }
+            try{
+                int c = divide(x, y);
+                System.out.println(c);
+            } catch (DivisionException e){
+                System.out.println(e);
+            }
+    }
    }
 } 

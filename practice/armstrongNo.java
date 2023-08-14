@@ -1,15 +1,15 @@
 package practice;
 import java.util.*;
-import java.util.Scanner;
 
 public class armstrongNo {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        if (armstrong(a)){
-            System.out.println("Armstrong Number");
-        }else{
-            System.out.print("Not an Armstrong number.");
+        try (Scanner sc = new Scanner(System.in)) {
+            int a = sc.nextInt();
+            if (armstrong(a)){
+                System.out.println("Armstrong Number");
+            }else{
+                System.out.print("Not an Armstrong number.");
+            }
         }
     }
 

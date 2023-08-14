@@ -63,9 +63,10 @@ class FClass{
     public static void main(String[] args) {
         String str;
         char c;
-        Scanner sc = new Scanner(System.in);
-        str = sc.nextLine();
-        c = sc.next().charAt(0);
+        try (Scanner sc = new Scanner(System.in)) {
+            str = sc.nextLine();
+            c = sc.next().charAt(0);
+        }
         Char key = new Char(c);
         Char[] cA = new Char[str.length()]; 
         for(int i = 0; i < str.length(); i++) {
